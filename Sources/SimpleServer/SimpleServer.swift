@@ -1,7 +1,7 @@
 import Foundation
 import Network
 
-public class SimpleServer {
+open class SimpleServer {
 	public var listener: NWListener
 	public var connections: Array<NWConnection>
 	public let requestHandler: (NWConnection, Data?) -> (data: Data?, close: Bool)
